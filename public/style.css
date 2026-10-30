@@ -1,0 +1,346 @@
+
+/* =========================================
+   1. GLOBAL STYLES
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================================
+   2. NAVIGATION
+========================================= */
+
+nav {
+    background: #172554;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+/* =========================================
+   3. MAIN CONTENT
+========================================= */
+
+.container {
+    flex: 1;
+    padding: 70px 8%;
+    text-align: center;
+    width: 100%;
+}
+
+.container h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #172554;
+}
+
+.container h3 {
+    margin: 20px 0;
+}
+
+.container p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.container ul {
+    display: inline-block;
+    text-align: left;
+    line-height: 2;
+}
+
+/* =========================================
+   4. BUTTONS
+========================================= */
+
+.btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background 0.2s ease;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+/* =========================================
+   5. CONTACT CARD
+========================================= */
+
+.contact-card {
+    background: white;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================
+   6. USERS TABLE
+========================================= */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+    white-space: nowrap;
+}
+
+th {
+    background: #172554;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+td {
+    font-size: 14px;
+    color: #374151;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+tbody tr:hover {
+    background: #eef2ff;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* =========================================
+   7. USER COUNT
+========================================= */
+
+.container .user-count {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #374151;
+}
+
+.user-count strong {
+    color: #2563eb;
+}
+
+/* =========================================
+   8. PAGINATION
+========================================= */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.pagination a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 44px;
+    padding: 11px 16px;
+    background: white;
+    color: #172554;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.pagination a:hover {
+    background: #dbeafe;
+    border-color: #2563eb;
+}
+
+.pagination a.active {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+    font-weight: bold;
+}
+
+.pagination a.active:hover {
+    background: #1d4ed8;
+}
+
+/* =========================================
+   9. ERROR PAGES (404 & 403)
+========================================= */
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-code {
+    font-size: 120px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.error-container h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #172554;
+}
+
+.error-container .btn {
+    margin-top: 20px;
+}
+
+/* 404 - Page Not Found */
+
+.error-404 {
+    color: #2563eb !important;
+}
+
+/* 403 - Access Denied */
+
+.error-403 {
+    color: #dc2626 !important;
+}
+
+.security-info {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.security-info p {
+    margin: 8px 0;
+}
+
+/* =========================================
+   10. FOOTER
+========================================= */
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+footer p {
+    color: white;
+    margin: 0;
+}
+
+/* =========================================
+   11. RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 5%;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 50px 5%;
+    }
+
+    .container h1 {
+        font-size: 30px;
+    }
+
+    th, td {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .pagination {
+        gap: 6px;
+    }
+
+    .pagination a {
+        padding: 9px 12px;
+        font-size: 13px;
+        min-width: 38px;
+    }
+
+    .contact-card {
+        padding: 20px;
+    }
+
+    .error-code {
+        font-size: 85px;
+    }
+
+    .error-container h2 {
+        font-size: 23px;
+    }
+
+    .security-info {
+        padding: 18px;
+    }
+}
